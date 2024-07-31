@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: SpringBoot3WithJaeger
+otel:
+  exporter:
+    otlp:
+      protocol: grpc
+      endpoint: http://localhost:4317
+  traces:
+    exporter: jaeger
